@@ -194,15 +194,15 @@ export default function StatsSection({ className = '', containerClassName = '', 
 
             {/* Third Stat Block - Only shown for design variant */}
             {!hideThirdBlock && variant === 'design' && (
-              <div className="stat-card bg-white backdrop-blur-sm rounded-xl p-5 flex flex-col h-full">
-                <h3 className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3">URLs Impacted</h3>
-                <div className="flex-1 flex flex-col justify-end">
-                  <div className="text-2xl font-bold mb-3" style={{ color: 'rgb(37 99 235)' }}>10,000+</div>
-                  <div className="h-1 bg-gray-200 rounded-full overflow-hidden">
-                    <div className="progress-bar h-full rounded-full" style={{ width: '100%', background: 'rgb(37 99 235)' }} />
-                  </div>
+            <div className="stat-card bg-white backdrop-blur-sm rounded-xl p-5 flex flex-col h-full">
+              <h3 className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3">URLs Impacted</h3>
+              <div className="flex-1 flex flex-col justify-end">
+                <div className="text-2xl font-bold mb-3" style={{ color: 'rgb(37 99 235)' }}>10,000+</div>
+                <div className="h-1 bg-gray-200 rounded-full overflow-hidden">
+                  <div className="progress-bar h-full rounded-full" style={{ width: '100%', background: 'rgb(37 99 235)' }} />
                 </div>
               </div>
+            </div>
             )}
           </div>
 
@@ -216,8 +216,8 @@ export default function StatsSection({ className = '', containerClassName = '', 
                 <span className="text-white">I currently reside in Denver, but consider planet earth my home.</span>
               ) : (
                 <>
-                  <span style={{ color: 'rgb(37 99 235)' }}>11+ Years</span>
-                  <span className="text-white"> Turning Pixels into Impact</span>
+              <span style={{ color: 'rgb(37 99 235)' }}>11+ Years</span>
+              <span className="text-white"> Turning Pixels into Impact</span>
                 </>
               )}
             </h2>

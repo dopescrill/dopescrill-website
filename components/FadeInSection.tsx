@@ -197,20 +197,20 @@ export default function FadeInSection({
       minHeight: direction === 'up' || direction === 'down' ? `${distance}px` : 'auto',
       minWidth: direction === 'left' || direction === 'right' ? `${distance}px` : 'auto'
     }}>
-      <motion.div
-        ref={elementRef}
-        className={className}
-        initial="hidden"
-        animate={shouldAnimate ? "visible" : "hidden"}
-        variants={getVariants()}
-        viewport={{ once: triggerOnce, amount: threshold }}
+    <motion.div
+      ref={elementRef}
+      className={className}
+      initial="hidden"
+      animate={shouldAnimate ? "visible" : "hidden"}
+      variants={getVariants()}
+      viewport={{ once: triggerOnce, amount: threshold }}
         style={{
           // Ensure transform doesn't affect layout flow
           willChange: 'transform, opacity'
         }}
-      >
-        {children}
-      </motion.div>
+    >
+      {children}
+    </motion.div>
     </div>
   );
 }

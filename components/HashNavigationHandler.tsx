@@ -22,8 +22,8 @@ export default function HashNavigationHandler({
     if (window.location.hash) {
       // Prevent native instant jump
       window.scrollTo(0, 0);
-    }
-
+          }
+          
     // Handle all anchor links with href starting with "#"
     const handleAnchorClick = (e: MouseEvent) => {
       const link = e.currentTarget as HTMLAnchorElement;

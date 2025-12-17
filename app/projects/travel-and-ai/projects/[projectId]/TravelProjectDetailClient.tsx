@@ -205,7 +205,7 @@ export default function TravelProjectDetailClient({ project, projectId }: Travel
             </motion.div>
           </div>
         </div>
-
+        
         {/* Hero Images - Only for spontaneous-travel-companion */}
         {isSpontaneousTravelCompanion && (
           <div className="container mx-auto px-6 mt-12 md:mt-16">
