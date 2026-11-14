@@ -24,3 +24,4 @@ yarn-error.log*
 .env*
 CursorLens/
 .vercel
+.claude/settings.local.json
