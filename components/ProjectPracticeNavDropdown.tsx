@@ -196,7 +196,6 @@ export default function ProjectPracticeNavDropdown({
   const isPracticeActive = isPathGroupActive(['/practice']);
   const isWorkActive = isPathGroupActive(['/projects', '/work']);
   const isWorkIndexActive = isExactPath('/projects') || isExactPath('/work');
-  const isServicesActive = isPathGroupActive(['/services']);
   const isContactActive = isPathGroupActive(['/contact']);
 
   const desktopTriggerClass = isDark
@@ -320,14 +319,6 @@ export default function ProjectPracticeNavDropdown({
                 >
                   Practice
                 </Link>
-                <a
-                  href="/services/"
-                  onClick={closeMenus}
-                  aria-current={isExactPath('/services') ? 'page' : undefined}
-                  className={mobileSiteItemClass(isServicesActive)}
-                >
-                  Services
-                </a>
                 <Link
                   href="/services/scoping-call/"
                   onClick={closeMenus}
@@ -577,13 +568,6 @@ export default function ProjectPracticeNavDropdown({
           )}
         </AnimatePresence>
         </div>
-        <a
-          href="/services/"
-          aria-current={isExactPath('/services') ? 'page' : undefined}
-          className={desktopTopItemClass(isServicesActive)}
-        >
-          Services
-        </a>
         <Link
           href="/services/scoping-call/"
           className={desktopTopItemClass(isContactActive)}

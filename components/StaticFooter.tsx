@@ -156,12 +156,6 @@ export default function StaticFooter({
                 </svg>
               </a>
               </div>
-              <a
-                href="/services/"
-                className="self-start whitespace-nowrap rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-black transition-all duration-200 ease-in-out hover:bg-black hover:text-white"
-              >
-                Services & Engagements
-              </a>
               <Link
                 href="/services/scoping-call"
                 className="self-start whitespace-nowrap rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-black transition-all duration-200 ease-in-out hover:bg-black hover:text-white"
